@@ -1,0 +1,40 @@
+/* general styling */
+
+body {
+    font-family: system-ui;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h1 {
+    font-weight: bolder;
+}
+
+
+th {
+    padding: .1em;
+}
+
+td {
+    padding: .5em;
+    text-align: center;
+}
+
+/* class & id */
+
+#forum-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(117, 195, 235);
+    padding: 2.5em;
+    box-shadow: .5cm .5cm;
+}

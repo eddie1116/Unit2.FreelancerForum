@@ -80,9 +80,9 @@ function render() {
 
 render();
 
-const freshNames = [`Super Man`, `Bad Bunny`, `Batman`, `Flash`, `Pikachu`, `Butterfly`, `John Doe`, `Humpty Dumpty`, `Phil`];
-const freshOccupations = [`Super Hero`, `singer`, `Crime Fighter`, `Cross Country`, `Speaker`, `Carpenter`, `Electrician`, `Sitter`, `Bouncer`];
-const freshRates = [0, 1000, 90, 150, 200, 35, 40, 75, 80];
+const freshNames = [`Super Man`, `Bad Bunny`, `Batman`, `Flash`, `Pikachu`, `Butterfly`, `John Doe`];
+const freshOccupations = [`Super Hero`, `singer`, `Crime Fighter`, `Cross Country`, `Speaker`, `Carpenter`, `Electrician`];
+const freshRates = [0, 1000, 90, 150, 200, 35, 40, 75, 80, 55, 10];
 
 function createRandomFreelancer() {
     const randomName = freshNames[Math.floor(Math.random() * freshNames.length)];
@@ -103,4 +103,4 @@ setInterval(function() {
     addFreelancerRow(newFreelancer);
 
     render();
-}, 3000);
+}, 4000);

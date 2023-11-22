@@ -1,5 +1,4 @@
 const state = {
-    averageRate: 50,
     freelancers: [
         {
             name: `Alice`,
@@ -20,7 +19,7 @@ const state = {
 }
 
 function updateAverageRate() {
-    total = 0;
+    let total = 0;
     
     for(let i = 0; i < state.freelancers.length; i++) {
         const currentFreelancer = state.freelancers[i];
@@ -82,7 +81,7 @@ render();
 
 const freshNames = [`Super Man`, `Bad Bunny`, `Batman`, `Flash`, `Pikachu`, `Butterfly`, `John Doe`];
 const freshOccupations = [`Super Hero`, `singer`, `Crime Fighter`, `Cross Country`, `Speaker`, `Carpenter`, `Electrician`];
-const freshRates = [0, 1000, 90, 150, 200, 35, 40, 75, 80, 55, 10];
+const freshRates = [1000, 90, 150, 200, 35, 40, 75, 80, 55, 10];
 
 function createRandomFreelancer() {
     const randomName = freshNames[Math.floor(Math.random() * freshNames.length)];
